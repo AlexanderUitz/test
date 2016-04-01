@@ -8,30 +8,29 @@ class Die
   end
 end
 
-BEGIN{
-  puts "roll the dices..."
-}
-
 die1 = Die.new
 die2 = Die.new
 die1.roll
 die2.roll
-puts die1.showing
-puts die2.showing
-
+BEGIN{
+  puts "roll the dices..."
+}
 if (die1.showing > die2.showing)
-  if(die1.showing == 2 and die2.showing == 1)
+  if(die1.showing == 2 && die2.showing == 1)
+    puts "u got a..."
     puts "Mäxle!"
   end
   result = die1.showing.to_s + die2.showing.to_s
 else
-  if(die1.showing == 1 and die2.showing == 2)
+  if(die1.showing == 1 && die2.showing == 2)
     puts "Mäxle!"
+    puts "YEHA!!"
   end
   result = die2.showing.to_s + die1.showing.to_s
 end
+puts die1.showing
+puts die2.showing
 
-END
-{
+END{
   puts "You got a " + result + "! Nice!"
 }
