@@ -9,7 +9,6 @@ class Die
 end
 
 BEGIN{
-
   puts "lets play mäxle!"
 }
 
