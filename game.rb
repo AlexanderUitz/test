@@ -18,6 +18,7 @@ BEGIN{
 if (die1.showing > die2.showing)
   if(die1.showing == 2 && die2.showing == 1)
     puts "u got a..."
+    puts 2+2
     puts "Mäxle!"
   end
   result = die1.showing.to_s + die2.showing.to_s
